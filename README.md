@@ -28,7 +28,7 @@ Neon Survival is a fun little arcade game where your goal is to survive as long 
 
 ## 🚀 Play the Game
 
-*Game link coming soon!*
+-Game link : https://sarthakkvashisth.itch.io/neon-survival
 
 ## 💡 Future Plans
 
