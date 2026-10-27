@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080812">
+  <meta name="description" content="Neon Survival — dodge the swarm and survive the neon arena.">
+  <title>Neon Survival</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="game-wrapper">
+
+    <header class="game-header">
+      <div class="brand">
+        <span class="brand-icon">◆</span>
+        <h1>NEON <span>SURVIVAL</span></h1>
+      </div>
+      <p class="tagline">SURVIVE THE SWARM</p>
+      <button id="muteBtn" class="mute-btn" type="button">
+  SOUND: ON
+</button>
+    </header>
+
+    <section class="hud" aria-label="Game statistics">
+      <div class="stat">
+        <span class="stat-label">SCORE</span>
+        <span class="stat-value" id="score">0000</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">SURVIVAL TIME</span>
+        <span class="stat-value" id="timer">00:00</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">BEST</span>
+        <span class="stat-value" id="best">0000</span>
+      </div>
+    </section>
+
+    <section class="arena-container" aria-label="Neon Survival game">
+      <canvas
+        id="gameCanvas"
+        width="800"
+        height="500"
+        aria-label="Game arena. Use WASD or arrow keys to move."
+      ></canvas>
+
+      <div class="overlay" id="startScreen">
+        <div class="overlay-content">
+          <p class="eyebrow">ARCADE SURVIVAL PROTOCOL</p>
+          <h2>ENTER THE <span>ARENA</span></h2>
+          <p class="instructions">
+            Dodge the enemies. Survive as long as you can.
+          </p>
+          <p class="controls-hint">MOVE: WASD / ARROW KEYS</p>
+          <button id="startBtn" class="primary-btn">
+            START GAME <span>▶</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="overlay hidden" id="gameOverScreen">
+        <div class="overlay-content">
+          <p class="eyebrow">SIMULATION TERMINATED</p>
+          <h2>GAME <span>OVER</span></h2>
+          <p class="instructions">
+            Final score: <strong id="finalScore">0</strong>
+          </p>
+          <button id="restartBtn" class="primary-btn">
+            TRY AGAIN <span>↻</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="game-footer">
+      <span>◈ BUILT FOR SURVIVAL</span>
+      <span>VERSION 1.0</span>
+    </footer>
+
+  </main>
+</body>
+</html>
